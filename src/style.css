@@ -1,0 +1,497 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #fafafa;
+  font-family: sans-serif;
+}
+
+body {
+  background: no-repeat;
+  background-image: url(https://source.unsplash.com/1600x900/?Auckland);
+  background-size:cover;
+}
+
+.box-container {
+  position: absolute;
+  top: 195px;
+  left: 333px;
+
+  background-color: rgba(0, 0, 0, 0.2);
+  filter: blur(1px);
+  width: 65%;
+  height: 600px;
+
+  box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.15);
+
+  z-index: 2;
+}
+
+.sun-icon {
+  position: absolute;
+  top: 250px;
+  left: 400px;
+  width: 220px;
+
+  stroke: #fee440;
+}
+
+
+.city-input {
+  position: absolute;
+  top: 135px;
+  left: 333px;
+
+  font-size: 24px;
+  padding: 10px;
+  width: 20%;
+
+  background-color: transparent;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  color: gray;
+}
+
+.btn-submit {
+  position: absolute;
+  top: 140px;
+  left: 720px;
+
+  font-size: 24px;
+  padding: 10px;
+  width: 100px;
+  color: rgba(255, 255, 255, 0.6);
+
+  border-radius: 5px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-submit:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.degree-text {
+  position: absolute;
+  top: 300px;
+  left: 666px;
+
+  font-size: 46px;
+  z-index: 5;
+}
+
+
+.weatherinfo{
+  position: absolute;
+  top: 550px;
+  left: 430px;
+
+  font-size:24px;
+  list-style: none;
+
+  z-index: 5;
+
+  
+}
+
+.weatherinfo li{
+    margin-top: 10px;
+
+    color: rgba(255, 255, 255, 0.6);
+  
+}
+
+.weather-description{
+  position: absolute;
+  top: 350px;
+  left: 675px;
+  z-index: 5;
+}
+
+.location-info{
+  position: absolute;
+  top: 500px;
+  left: 430px;
+
+  font-size: 34px;
+
+  z-index: 5;
+}
+
+.localtime{
+  position: absolute;
+  top: 200px;
+  right: 340px; 
+
+  font-size: 20px;
+}
+
+
+
+@media only screen and (min-width: 600px){
+
+  body{
+    background-size: cover;
+    height: 100vh;
+  }
+
+  .btn-submit {
+    position: absolute;
+    top:60px;
+    left: 435px;
+  
+    font-size: 16px;
+    padding: 10px;
+    width: 100px;
+  }
+
+  .city-input {
+    position: absolute;
+    top: 50px;
+    left: 233px;
+  
+    font-size: 24px;
+    padding: 10px;
+    width: 30%;
+  }
+
+  .degree-text {
+    position: absolute;
+    top: 250px;
+    left: 380px;
+    
+    font-size: 35px;
+  }
+
+  .weather-description{
+    position: absolute;
+    top: 300px;
+    left: 380px;
+  }
+
+  .sun-icon {
+    position: absolute;
+    top: 140px;
+    left: 380px;
+    width: 90px;
+  }
+
+  .location-info{
+    position: absolute;
+    top: 430px;
+    left: 250px;
+
+    font-size: 22px;
+  }
+
+  .weatherinfo{
+    position: absolute;
+    top: 460px;
+    left: 250px;  
+
+    font-size: 20px;
+  }
+
+  .localtime{
+    position: absolute;
+    top: 120px;
+    right: 120px; 
+
+    font-size: 16px;
+  }
+
+  .box-container {
+    position: absolute;
+    top: 105px;
+    left: 233px;
+
+    width: 55%;
+    height: 550px;
+
+  }
+}
+
+@media only screen and (min-width: 768px) {
+
+  body{
+    background-size: cover;
+    height: 100vh;
+  }
+
+  .degree-text {
+    position: absolute;
+    top: 300px;
+    left: 400px;
+    
+    font-size: 35px;
+  }
+
+  .btn-submit {
+    position: absolute;
+    top:143px;
+    left: 510px;
+  
+    font-size: 20px;
+    padding: 10px;
+    width: 100px;
+  }
+
+  .city-input {
+    position: absolute;
+    top: 140px;
+    left: 233px;
+  
+    font-size: 24px;
+    padding: 10px;
+    width: 30%;
+  }
+
+  .weather-description{
+    position: absolute;
+    top: 360px;
+    left: 405px;
+  }
+
+  .sun-icon {
+    position: absolute;
+    top: 300px;
+    left: 250px;
+    width: 120px;
+  }
+
+  .location-info{
+    position: absolute;
+    top: 500px;
+    left: 250px;
+  }
+
+  .weatherinfo{
+    position: absolute;
+    top: 550px;
+    left: 250px;  
+  }
+
+  .localtime{
+    position: absolute;
+    top: 200px;
+    right: 130px; 
+
+    background-size: cover;
+  }
+
+  .box-container {
+    position: absolute;
+    top: 195px;
+    left: 233px;
+  
+    background-color: rgba(0, 0, 0, 0.2);
+    filter: blur(1px);
+    width: 65%;
+    height: 500px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  body{
+    background-size: cover;
+    height: 100vh;
+  }
+
+  .degree-text {
+    position: absolute;
+    top: 300px;
+    left: 450px;
+    
+    font-size: 35px;
+  }
+
+  .btn-submit {
+    position: absolute;
+    top:143px;
+    left: 590px;
+  
+    font-size: 20px;
+    padding: 10px;
+    width: 100px;
+  }
+
+  .city-input {
+    position: absolute;
+    top: 140px;
+    left: 233px;
+  
+    font-size: 24px;
+    padding: 10px;
+    width: 30%;
+  }
+
+  .weather-description{
+    position: absolute;
+    top: 360px;
+    left: 455px;
+  }
+
+  .sun-icon {
+    position: absolute;
+    top: 300px;
+    left: 300px;
+    width: 120px;
+  }
+
+  .location-info{
+    position: absolute;
+    top: 500px;
+    left: 300px;
+  }
+
+  .weatherinfo{
+    position: absolute;
+    top: 550px;
+    left: 300px;  
+  }
+
+  .localtime{
+    position: absolute;
+    top: 200px;
+    right: 190px; 
+
+    background-size: cover;
+  }
+
+  .box-container {
+    position: absolute;
+    top: 195px;
+    left: 233px;
+  
+    background-color: rgba(0, 0, 0, 0.2);
+    filter: blur(1px);
+    width: 65%;
+    height: 570px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  body {
+    background: no-repeat;
+    background-image: url(https://source.unsplash.com/1600x900/?Auckland);
+    background-size:cover;
+  }
+  
+  .box-container {
+    position: absolute;
+    top: 195px;
+    left: 333px;
+  
+    background-color: rgba(0, 0, 0, 0.2);
+    filter: blur(1px);
+    width: 65%;
+    height: 600px;
+  
+    box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.15);
+  
+    z-index: 2;
+  }
+  
+  .sun-icon {
+    position: absolute;
+    top: 250px;
+    left: 400px;
+    width: 220px;
+  
+    stroke: #fee440;
+  }
+  
+  
+  .city-input {
+    position: absolute;
+    top: 135px;
+    left: 333px;
+  
+    font-size: 24px;
+    padding: 10px;
+    width: 20%;
+  
+    background-color: transparent;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: gray;
+  }
+  
+  .btn-submit {
+    position: absolute;
+    top: 140px;
+    left: 720px;
+  
+    font-size: 24px;
+    padding: 10px;
+    width: 100px;
+    color: rgba(255, 255, 255, 0.6);
+  
+    border-radius: 5px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .btn-submit:hover {
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .degree-text {
+    position: absolute;
+    top: 300px;
+    left: 666px;
+  
+    font-size: 46px;
+    z-index: 5;
+  }
+  
+  
+  .weatherinfo{
+    position: absolute;
+    top: 550px;
+    left: 430px;
+  
+    font-size:24px;
+    list-style: none;
+  
+    z-index: 5;
+  
+    
+  }
+  
+  .weatherinfo li{
+      margin-top: 10px;
+  
+      color: rgba(255, 255, 255, 0.6);
+    
+  }
+  
+  .weather-description{
+    position: absolute;
+    top: 350px;
+    left: 675px;
+    z-index: 5;
+  }
+  
+  .location-info{
+    position: absolute;
+    top: 500px;
+    left: 430px;
+  
+    font-size: 34px;
+  
+    z-index: 5;
+  }
+  
+  .localtime{
+    position: absolute;
+    top: 200px;
+    right: 340px; 
+  
+    font-size: 20px;
+  }
+}
